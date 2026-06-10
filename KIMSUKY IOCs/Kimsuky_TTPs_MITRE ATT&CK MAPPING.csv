@@ -1,0 +1,13 @@
+Tactic,Technique ID,Technique
+Initial Access,T1566.002,Adversary-in-the-Middle (AiTM) Phishing
+Execution,T1059.005,Native API Shellcode
+Execution,T1059.003,Bash/Shell Scripts
+Credential Access,T1555,Credential Store Dumping
+Credential Access,T1557.003,Session Hijacking
+Persistence,T1176,Rootkit (via khook syscall manipulation)
+Defense Evasion,T1562.001,Disable Security Tools
+Defense Evasion,T1552,Unsecured Credential Files
+Discovery,T1592,Technical Information Discovery
+Discovery,T1590,Network Information
+Exfiltration,T1041,Exfiltration over C2 Channel
+Exfiltration,T1567.002,Exfiltration via Cloud Services
