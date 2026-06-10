@@ -1,0 +1,31 @@
+Tactic,Technique ID,Technique,Note
+Initial Access,T1078,Valid Accounts,Use of stolen VPN/SIP/SSO credentials
+Initial Access,T1190,Exploit Public-Facing Application,"Exploitation of routers, firewalls, SIP"
+Execution,T1059,Command and Scripting Interpreter,"China Chopper, shell access"
+Execution,T1203,Exploitation for Client Execution,Custom router vulnerabilities
+Persistence,T1098.004,Account Manipulation: SSH Authorized Keys,Modification of SSH authorized_keys for persistence across reboots
+Persistence,T1547,Boot or Logon Autostart Execution,Modified router startup configs
+Persistence,T1601.002,Implant Internal Image,Firmware/rootkit persistence (Demodex)
+Privilege Escalation,T1068,Exploitation for Privilege Escalation,Demodex/rootkit system hooks
+Defense Evasion,T1014,Rootkit,Demodex
+Defense Evasion,T1027,Obfuscated Files or Information,"Custom shell scripts, tool encryption"
+Defense Evasion,T1036,Masquerading,Renamed router/system binaries
+Defense Evasion,T1070,Indicator Removal,Log manipulation on telecom infrastructure devices
+Defense Evasion,T1112,Modify Registry,Config hijacking on telecom infrastructure devices
+Credential Access,T1003,Credential Dumping,"Extraction of VoIP admin creds, SSO tokens"
+Credential Access,T1555,Credentials from Password Stores,Keying into router/VPN credential stores for lateral expansion
+Discovery,T1016,System Network Configuration Discovery,"Network mapping using tasklist, wevtutil, and queries of machine GUIDs and crypto keys"
+Discovery,T1046,Network Service Scanning,SIP/VPN/VLAN mapping
+Discovery,T1082,System Information Discovery,Recon via CLI and custom netstat-like tools
+Lateral Movement,T1021,Remote Services,"VPN tunnel exploitation, internal pivots"
+Lateral Movement,T1199,Trusted Relationship,Leveraging trusted ISP-to-ISP connections to pivot into partner environments
+Collection,T1056,Input Capture,"Potential SIP interception, packet sniffing"
+Collection,T1074,Data Staged,Data staged within compromised routers before exfiltration to external C2
+Collection,T1213,Data from Information Repositories,"Harvesting of subscriber metadata, CDRs, VoIP configurations, lawful intercept logs, and incident response playbooks"
+Collection,T1602,Data from Configuration Repository,"VoIP, SIP, router config dump"
+Command & Control,T1001.001,Data Obfuscation: Junk Data,Beacon-based implants masquerading as legitimate Zero Trust or router monitoring tools (Shadow Network/Defense from Huanyu Tianqiong)
+Command & Control,T1071.001,Application Layer Protocol: Web Protocols,"DNS, HTTPS, TCP 443 C2"
+Command & Control,T1105,Ingress Tool Transfer,"Shells, updates for router implants"
+Command & Control,T1572,Protocol Tunneling,TLS-encrypted channels with minimal jitter to blend into telecom backbone traffic
+Exfiltration,T1041,Exfiltration Over C2 Channel,"DNS beaconing, encrypted TCP exfil"
+Exfiltration,T1567.002,Exfiltration Over Web Service,Staging to external web panels
