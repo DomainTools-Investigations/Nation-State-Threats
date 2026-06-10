@@ -1,0 +1,35 @@
+Tactic,Technique ID,Technique,Note
+Reconnaissance,T1595,Active Scanning,VPS nodes used to probe target systems and deliver phishing infrastructure
+Reconnaissance,T1598,Phishing for Information,"Domains such as dreamy-jobs[.]com, israel-talent[.]com, and wazayif-halima[.]org used to lure specific industries for credential harvesting"
+Initial Access,T1566,Phishing,Job-themed credential-harvest pages deployed on low-cost VPS nodes purchased through EDIS and Impreza Host
+Initial Access,T1078,Valid Accounts,Harvested credentials fed into further access attempts often timed shortly after domain activation
+Execution,T1204,User Execution,Operators deploy phishing pages requiring victim interaction (login forms and document lures)
+Persistence,T1098,Account Manipulation,Harvested credentials used to maintain foothold where applicable
+Persistence,T1136,Create Account,Single-purpose ProtonMail inboxes created for procurement (operational persistence at the infrastructure layer)
+Privilege Escalation,T1068,Exploitation for Privilege Escalation,Implied via Charming Kitten's broader history of targeting Microsoft Exchange and Ivanti appliances
+Defense Evasion,T1036,Masquerading,"Aliases imitating Israeli, Russian, European, and American names; job-themed domains and fake recruitment brands"
+Defense Evasion,T1070.004,File Deletion,Single-use ProtonMail identities deleted or abandoned immediately after procurement
+Defense Evasion,T1112,Modify Registry,Historically used in Moses Staff post-exploitation phases (not directly observed in the dump)
+Defense Evasion,T1027,Obfuscated/Encrypted Files,"TOR mirrors, private WHOIS, and encrypted communication channels"
+Defense Evasion,T1564.003,Hidden Artifacts: Disposable Email Identities,Strict one-time usage of procurement emails to prevent cross-cluster linkage
+Credential Access,T1056,Input Capture,Credential-harvesting login portals deployed on purchased domains
+Credential Access,T1110,Brute Force,Occasional activity against Israeli organizations documented in public reporting of Moses Staff operations
+Discovery,T1087,Account Discovery,Infrastructure scans for valid credentials through job-themed lures
+Discovery,T1046,Network Service Scanning,EDIS-hosted servers used to probe Israeli networks prior to planned intrusions
+Lateral Movement,T1021,Remote Services,Harvested valid accounts used through VPN portals and cloud dashboards
+Collection,T1530,Data from Cloud Storage,Compromises of cloud and email providers in the civilian tier
+Collection,T1114,Email Collection,Phished credentials provide mailbox access enabling data theft
+Command & Control,T1071,Application Layer Protocol,C2 nodes hosted on low-tier VPS servers via HTTP(S)
+Command & Control,T1105,Ingress Tool Transfer,Payloads staged on purchased domains and KVM BASIC VPS instances
+Command & Control,T1568.002,Dynamic DNS,Operators rotate hosts rapidly; CloudDNS references seen around Moses Staff mirrors
+Exfiltration,T1048,Exfiltration Over Alternative Protocol,TOR mirrors used for anonymity during leaks
+Exfiltration,T1567.002,Exfiltration to Web Services,"Leak sites operated under moses-staff[.]io, moses-staff[.]se, moses-staff[.]to"
+Impact,T1491,Defacement / Psychological Operations,Public leak sites intended to intimidate Israeli institutions
+Impact,T1485,Data Destruction,Moses Staff destructive toolchain documented in historical operations
+Resource Development,T1585.001,Establish Accounts: Email Accounts,Single-use ProtonMail addresses for procurement
+Resource Development,T1583.001,Acquire Infrastructure: Virtual Private Servers,"Routine procurement from EDIS, Impreza Host, and Bulgarian VPS sellers"
+Resource Development,T1586.002,Compromise Accounts: Webmail,Credential theft from phishing operations
+Resource Development,T1583.003,Domain Registration,Clusters of domains purchased for credential harvesting and campaign staging
+Resource Development,T1586,Obfuscation via Payment Providers,Cryptomus used to anonymize infrastructure transactions
+Resource Development,T1587,Develop Capabilities,Infrastructure provisioning using micro-crypto payments in a repeatable pattern
+Resource Development,T1599,Network Boundary Bridging,Operators evade regional filtering by paying through crypto and using global VPS hosting
