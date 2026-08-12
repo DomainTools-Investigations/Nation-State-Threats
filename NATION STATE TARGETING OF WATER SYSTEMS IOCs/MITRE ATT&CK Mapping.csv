@@ -1,0 +1,29 @@
+Actor / Stream,Tactic,Technique,ID,Observed / Assessed Use
+Iran / CyberAv3ngers,Initial Access,Internet Accessible Device,T0883,Accessed publicly exposed PLCs without sufficient network hardening
+Iran / CyberAv3ngers,Command and Control,Commonly Used Port,T0885,"Used OT ports including 44818, 2222, 102, 502, and SSH on 22"
+Iran / CyberAv3ngers,C&C,Remote Access Software,T1219,Deployed Dropbear SSH for remote access
+Iran / CyberAv3ngers,Impact,Stored Data Manipulation,T1565,Interacted with project files and altered HMI / SCADA display data
+Iran / CyberAv3ngers,Initial Access,Valid Accounts,T1078,Inferred from default / weak credential abuse against PLCs
+Iran / CyberAv3ngers,Impact,Defacement,T1491,HMI/PLC defacement messaging in Unitronics activity
+Russia / CARR / Sandworm-adjacent,Initial Access,External Remote Services,T1133,Likely access through remote industrial interfaces / exposed remote control paths
+Russia / CARR / Sandworm-adjacent,Initial Access,Valid Accounts,T1078,Likely weak credential or exposed HMI access model
+Russia / CARR / Sandworm-adjacent,Discovery,Network Service Discovery,T1046,Assessed scanning / discovery of exposed water-control interfaces
+Russia / CARR / Sandworm-adjacent,Impact,Service Stop / Process Disruption,T1489 / ICS-aligned impact,Manipulation of water-system process controls resulting in overflow / floodgate events
+Russia / CARR / Sandworm-adjacent,Impact,Data Manipulation,T1565,"Manipulation of set points, values, and control-system displays"
+Russia / CARR / Sandworm-adjacent,Collection / Influence,Screen Capture / Public Claims,T1113 / influence artifact,Claim videos showed screen recordings of HMI manipulation
+China / Volt Typhoon,Initial Access,Exploit Public-Facing Application,T1190,Compromise of exposed edge devices and public-facing infrastructure
+China / Volt Typhoon,Defense Evasion,Living-off-the-Land,Multiple,Use of native tools to blend with administration activity
+China / Volt Typhoon,Execution,Windows Management Instrumentation,T1047,WMIC execution for process creation and credential-access workflows
+China / Volt Typhoon,Credential Access,OS Credential Dumping: NTDS,T1003.003,Attempted extraction of ntds.dit and registry hives
+China / Volt Typhoon,Command and Control,Proxy,T1090,netsh portproxy used for forwarding / covert access
+China / Volt Typhoon,Execution,PowerShell,T1059.001,Native PowerShell use in LOTL activity
+China / Volt Typhoon,Discovery,Account Discovery,T1087,Account and environment enumeration
+China / Volt Typhoon,Discovery,Remote System Discovery,T1018,Network and host reconnaissance
+China / Volt Typhoon,Lateral Movement,Remote Services,T1021,Movement through compromised internal environments
+China / Volt Typhoon,Collection,Archive Collected Data,T1560,"Staging and compression of collected data, including 7z examples"
+China / Volt Typhoon,Defense Evasion,Impair Defenses,T1562,Avoidance of EDR visibility through native tooling and low-noise operations
+Poland / Unattributed,Initial Access,Internet Accessible Device,T0883,Internet-exposed ICS used as access path
+Poland / Unattributed,Initial Access,Valid Accounts,T1078,Weak/default passwords
+Poland / Unattributed,Impact,Data Manipulation,T1565,"Potential manipulation of pump, filter, and dosing parameters"
+American Water / Unattributed,Initial Access,Unknown,N/A,Public reporting does not disclose technical access vector
+American Water / Unattributed,Impact,Service Disruption,"T1489, if confirmed",Customer-facing and billing systems were affected; company stated water/wastewater operations were not impacted

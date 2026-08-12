@@ -1,0 +1,12 @@
+Indicator / Artifact,Type,Relevance
+wmic / WMIC,Native Windows tool,"Process creation, discovery, credential-access workflows"
+ntdsutil.exe,Native Windows tool,Active Directory database extraction
+ntds.dit,Credential artifact,Domain credential database targeted for exfiltration
+SYSTEM registry hive,Credential artifact,Used with ntds.dit for password hash extraction
+SECURITY registry hive,Credential artifact,Credential and policy data
+netsh interface portproxy,Native Windows tool,Port forwarding / proxying for persistence and C2
+PowerShell,Native Windows tool,"Execution, discovery, and administration abuse"
+Compromised SOHO routers,Infrastructure,Proxying and operational obfuscation
+C:\Windows\Temp\,Host artifact path,Staging location observed in advisory examples
+C:\Users\Public\,Host artifact path,Staging location observed in advisory examples
+ADMIN$ share output redirection,Windows admin artifact,Used in command execution / remote activity

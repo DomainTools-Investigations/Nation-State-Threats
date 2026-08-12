@@ -1,0 +1,9 @@
+Indicator / Artifact,Type,Relevance
+TCP/44818,OT protocol port,EtherNet/IP / Rockwell Automation communications
+TCP/2222,OT protocol port,EtherNet/IP implicit messaging
+TCP/102,OT protocol port,Siemens S7 communications
+TCP/502,OT protocol port,Modbus/TCP
+TCP/22,Remote access port,SSH access; Dropbear SSH observed on victim endpoints
+Dropbear SSH,Tool,Used for remote access persistence through port 22
+Studio 5000 Logix Designer,Legitimate engineering software,Used to connect to and interact with exposed Rockwell PLCs
+.ACD project files,Rockwell project artifact,Targeted / extracted project files containing ladder logic and configuration

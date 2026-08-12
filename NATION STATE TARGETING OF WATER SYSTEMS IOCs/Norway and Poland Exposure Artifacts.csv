@@ -1,0 +1,5 @@
+Indicator / Artifact,Type,Relevance
+Bremanger / Risevatnet dam floodgate manipulation,Process-control behavior,"Floodgate opened, releasing roughly 500 liters per second for four hours"
+Weak/default passwords,Access condition,Reported as common vector in European water incidents
+Internet-exposed control systems,Exposure condition,Reported vector in Polish water treatment plant breaches
+"Pump, filter, and chemical-dosing control access",Process-control exposure,Relevant to Polish water treatment plant incident reporting
